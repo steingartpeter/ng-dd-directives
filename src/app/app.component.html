@@ -9,5 +9,7 @@
   } -->
 
   <!-- <p *ngIf="isAdmin()">Only admins see this...</p> -->
-   <p appAuth="admin">Only admins see this...</p>
+   <ng-template appAuth="admin">
+     <p>Only admins see this...</p>
+   </ng-template>
 </main>
